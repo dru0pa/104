@@ -1,0 +1,589 @@
+AZ 104 RENEWAL EXAM QUESTIONS AND ANSWER UPDATED 2022
+
+1. You plan to deploy an Azure web app that will have the following settings
+Name: WebApp1
+Publish: Docker container
+Operating system: Windows
+Region: West US
+Windows Plan (West US): ASP-RG1-8bcf
+You need to ensure that WebApp!1 uses the ASP.NET v4.7 runtime stack. Which setting should You modify?
+Select only one answer
+a) Region
+b) Operating system
+c) Publish
+d) Windows Plan
+
+2. You have the following Azure resources:
+e Azure Key Vault named KeyVault1
+e Azure App Service named WebApp1
+You need to ensure that WebApp1 can access KeyVault1 by using Azure Active Directory(Azure AD) authentication.
+Which two settings can be used to configure WebApp1? Each correct answer presents a complete solution.
+Select all answers that apply.
+a) User assigned managed identity
+b) Application settings
+c) TLS/SSL
+d) Bindings
+e) App Service Authentication
+f) System assigned managed identity
+
+3. You have an Azure web app named Contoso2023. You add a deployment slot to Contoso2023 named Slot1. You need to be able to perform a deployment slot swap with a preview. 
+What should you modify?
+
+Select only one answer
+a) application settings for Contoso2023
+b) general settings for Contoso2023
+c) application settings for Contoso2023-Slot1
+d) general settings for
+e) Contoso2023-Slot1
+
+4. You plan to create an Azure container instance named container1 that will use a Docker image named Image1. You need to ensure that container1 has persistent storage.
+Which Azure resources should you deploy for the persistent storage?
+Select only one answer.
+a) an Azure container registry only
+b) an Azure Storage account and a file share
+c) an Azure Storage account and a blob container
+d) an Azure SQL database only
+
+5. You have an Azure container registry named Registry1. You enable the admin user for Registry1.
+Which username should you use to connect to Registry1 as an admin user?
+
+Select only one answer
+a) Admin
+b) Root
+c) Administrator
+d) Registry1.azurecr.io
+
+6. You have an Azure subscription that contains the following resources:
+a storage account named storage123
+a container instance named App Container
+The subscription contains a virtual network named VirtualNet4 that has the
+following subnets:
+SubnetA- storage123 is connected to SubnetA.
+SubnetB- AppContainer is connected to SubnetB.
+SubnetC- No resources.
+You plan to deploy an Azure container instance named container5 to VirtualNet4.
+To which subnets can you deploy container5? Select only one answer.
+a) SubnetB only
+b) SubnetC only
+c) SubnetB and SubnetC only
+d) SubnetA, SubnetB, and SubnetC
+
+7. You have an Azure Storage account named storage1. You create the following encryption scopes for storage1:
+Scope1 that has an encryption type of Microsoft-managed keys
+Scope2 that has an encryption type of Customer-managed keys
+Which storage services can be used with Scope2? Select only one answer.
+a) blob only
+b) file only
+c) blob and file only
+d) table and queue only
+e) blob, file, table, and queue
+
+You have an Azure Storage account named storage’ that contains a file share named share.
+You also have an on-premises Active Directory domain that contains a user named User1.
+You need to ensure that User! can access share1 by using the SMB protocol.
+What should you do?
+
+a) Provide User1 with the shared access signature (SAS) for storage.
+b) Configure the Access control (IAM) settings of storage.
+c) Configure the Firewalls and virtual networks settings of storage1
+d) Provide User1 with the access key for storage1.
+
+
+10. You have an Azure Storage account named storage1 that is configured to use the Hot access tier.
+Storage has a container named container1 and the lifecycle management rule with the following settings:
+Move blob to cool storage: Selected
+Days after last modification: 3
+Move blob to archive storage: Selected
+Days after last modification: 5
+
+On December 1, you create a file named File1 in container1. On December 10, you rehydrate File1 and move the file to the Hot access tier. When will File1 be moved to archive storage?
+Select only one answer
+a) within 24 hours
+b) on December 15
+c) on December 18
+d) on January 1
+
+11. You have an Azure Storage account named storage1. You need to provide time-limited access to storage1. 
+What should you use?
+Select only one answer
+a) an access key
+b) a role assignment
+c) an access policy
+d) a share access signature (SAS)
+
+12. You have the following Azure virtual machines that run Windows Server 2019:
+Server1- connected to VirtualNET1 and has a Wingtiptoys.com DNS suffix configured in Windows Server 2019
+Server2- connected to VirtualNET1 and has a Fabrikam.com DNS suffix configured in
+Windows Server 2019
+Server3- connected to VirtualNET2 and has a Wingtiptoys.com DNS suffix configured
+in Windows Server 2019
+Server4- connected to VirtualNET2 and has a Fabrikam.com DNS suffix configured in
+Windows Server 2019
+You create a private DNS zone named fabrikam.com and add the following virtual network links to fabrikam.com:
+Link1- connected to VirtualNET1 and has auto registration enabled
+Link2- connected to VirtualNET2 and has auto registration enabled
+Select only one answer
+a) Server2 only
+b) Server1 and Server2 only
+c) Server2, and Server4 only
+d) Server1, Server2, Server3, and Server4
+
+13. A company named Contoso, Ltd. has an Azure subscription that contains an Azure Active Directory (Azure AD) tenant named contoso.com. The Azure subscription contains the following virtual networks:
+VNET1- deployed in the East US location
+VNET2- deployed in the East US location
+VNET3- deployed in the West US location
+Contoso purchases a company named A. Datum Corporation. A. Datum has an Azure subscription that contains an Azure AD tenant named adatum.com. Adatum.com contains the following virtual networks:
+VNETA- deployed in the East US location
+VNETB- deployed in the West US location
+Which virtual networks can you peer to VNET1? Select only one answer.
+a) VNET2 only
+b) VNET2 and VNET3 only
+c) VNET2 and VNETA only
+d) VNET2, VNET3, and VNETA only
+e) VNET2, VNET3, VNETA and VNETB
+
+14. You have an Azure virtual machine named VM1 that connects to a virtual network named VNET1.
+You create a private DNS zone named contoso.com and add an A record named host1 to the zone. You need to ensure that VM1 can resolve host1.contoso.com. What should you do?
+Select only one answer
+a) Modify the Access control (IAM) settings of the zone.
+b) From the zone, add a virtual network link.
+c) From the properties of the network interface, modify the options of the DNS servers
+d) From the properties of VNET1, modify the options of the DNS servers.
+
+15. You have a proximity placement group named Proximity1. You plan to create the following Azurere sources:
+a virtual machine named VM1
+a disk named Disk1
+a virtual network named VNET1
+a public IP address named IP1
+Which resources can you place in Proximity1? Select only one answer
+a) VM1 only
+d) VM1 and Disk1 only
+c) Disk1 and IP1 only
+d) VNET1, Disk1, and IP1 only
+
+16. You have an Azure virtual network named VNET1 has and a network security group (NSG) named NSG1. NSGI1 has the following inbound security rules:
+Rule1 has a priority of 100 and allows port 3389 on TCP protocol from any source and to any
+destination
+Rule2 has a priority of 200 and allows ports 80 and 8080 on UDP protocol from any source and to any destination
+Rule3 has a priority of 300 and denies ports 1-2000 on TCP protocol from any source and to any destination
+Rule4 has a priority of 400 and allows ports 50-500 on TCP protocol from Virtual Network
+Source and to any destination
+RuleS5 has a priority of 500 and allows ports 80 and 443 on TCP protocol from any source and to any destination
+You need to allow HTTP and HTTPS connections from the internet to VNET1. What should you change for NSG1?
+Select only one answer.
+a) Priority for Rule4 to 250
+b) Protocol for Rule2 to TCP
+c) Priority for Rule3 to 450
+d) Priority for Rule5 to 250
+
+17. You have an Azure virtual machine named VM1 that connects to a virtual network named VNET1.
+A network security group (NSG) named NSG1 allows connections to VM1 from VNET1 only. You need to add an inbound security rule to NSG1 that meets the following requirements
+Allows Azure Backup to back up VM1
+Minimizes the types of allowed inbound traffic
+What should you use as the source for the inbound security rule? Select only one answer.
+a) any IP address
+b) the IP address of VM1
+c) a service tag for Azure
+Backup
+d) an application security group
+
+18. You have an Azure virtual network named VNET1 that has an IP address space of 192.168.0.0/16 and the following subnets:
+Subnet1- has an IP address range of 192.168.1.0/24 and is connected to 15 VMs
+Subnet2- has an IP address range of 192.168.2.0/24 and does not have any VMs connected
+You need to ensure that you can deploy Azure Firewall to VNET1. 
+What should you do?
+Select only one answer.
+a) Add a new subnet to VNET1
+b) Add a service endpoint to Subnet2
+c) Modify the subnet mask of Subnet2
+d) Modify the IP address space of VNET1.
+
+19. You have an Azure subscription that contains a storage account named storage1 and the following virtual machines:
+
+VM1 has a public IP address of 13.68.158.24 and is connected to VNET1/Subnet1
+VM2 has a public IP address of 52.255.145.76 and is connected to VNET1/Subnet1
+VM3 has a public IP address of 13.68.158.50 and is connected to
+VNET1/Subnet2 The subnets have the following service endpoints:
+Subnet1 has a Microsoft. Storage service endpoint
+Subnet2 does not have any service endpoint
+Storage1 has a firewall configured to allow access from the 13.68.158.0/24 IP address range only. You need to identify which virtual machines can access storage1. What should you identify?
+Select only one answer
+a) VM1 only
+b) VM3 only
+c) VM1 and VM2 only
+d) VM1 and VM3 only
+e) VM1, VM2 and VM3
+
+20. You have an Azure virtual machine named Computer5 and a Recovery Services vault named Vault5. Computer5 contains the following data disks:
+DiskA has a size of 512 GB
+DiskB has a size of 30 TB
+DiskC has a size of 26 TB
+DiskD has a size of 2.0 TB
+Which data disks can you back up to Vault5?
+Select only one answer.
+a) DiskA only
+b) DiskB only
+c) DiskC only
+d) DiskD only
+e) DiskA, DiskB, DiskC and DiskD
+
+21. You have the following Azure resources:
+A virtual machine named VM1
+A Recovery Services vault named Vault
+On January 1, you configure backups for VM1 by using the following backup policy:
+Frequency: Daily
+Time: 23:00
+Timezone: (UTC) Coordinated Universal Time
+Retain instant recovery snapshot(s) for: 2 Day(s)
+Retention of daily backup point: 7 Day(s)
+Azure Backup Resource Group: Backup1RG
+How many restore point collections recovery points will be stored in Backup1RG on January 10?
+Select only one answer.
+a) 2
+b) 7
+c) 9
+d) 10
+
+22. You have a Recovery Services vault named Vault1 that has soft delete enabled. Vault1 stores backups for the following Azure resources:
+an Azure virtual machine named VM1
+an Azure file share named sharel
+a SQL Server on Azure virtual machine named
+SQL1 Which backups are protected by soft delete?
+Select only one answer.
+a) VMI only
+b) share1 only
+c) VM1 and share only
+d) VM1, share1, and SQL1
+
+23. You have a Recovery Services vault named Recovery! that includes a backup policy named Policy1. You back up several Azure virtual machines to Recovery1 by using Policy1. You need to view the Azure Backup reports. What should you do first?
+Select only one answer
+a) Create an Azure Log Analytics workspace.
+b) Modify the Backup Configuration settings of Recovery1.
+c) Configure the Diagnostics settings of Recovery1.
+
+24. You have an Azure subscription that contains an Azure container registry named Contoso2020. You plan to create an Azure Kubernetes Service (AKS) cluster named AKS1 that has the following settings:
+Kubernetes version: 1.16.10
+Node pools:1
+Virtual nodes: Disabled
+Authentication method: Service principal
+Network configuration: Basic
+
+You need to ensure that you can integrate AKS1 and Contoso2020. Which AKS1 settings should you modify?
+Select only one answer.
+a) Kubernetes Version
+b) Virtual nodes
+c) Authentication method
+d) Network configuration
+
+25. You have the following containerized applications:
+App1 that runs in a Server Core installation of Windows Server container
+App2 that runs in a Nano Server container
+App3 that runs in a Linux container
+App4 that runs in a Linux container
+What is the minimum number of Azure Kubernetes Service (AKS) node pools required to run
+All the applications?
+Select only one answer.
+a) 1
+b) 2
+c) 3
+d) 4
+
+26. You have an Azure Active Directory (Azure AD) tenant named contoso.com that contains a user named Ben Smith. You configure a Password protection for contoso.com that includes the following Custom banned passwords settings:
+Enforce custom list: Yes
+Custom banned password list: Contoso
+Which password can be used by Ben Smith? Select only one answer
+a) FgRs01
+b) COnt0s0123
+c) CONTOSO123
+d) Contol23so
+
+27. You have an Azure subscription that contains a user named Userl1, a security group named Group1, and a virtual machine named VM1. You enable a system-assigned managed identity for VM1. To which identities can you assign the Reports reader role?
+Select only one answer.
+a) User1 only
+d) User1 and Group1 only
+c) User1 and VM1 only
+d) User1, Group1, and VM1
+
+28. You have an Azure Active Directory (Azure AD) tenant that contains the following users:
+User1 has a Department set to Sales and a Country set to USA
+User2 has a Department set to Marketing and a Country set to USA
+User3 has a Department set to Sales and a Country set to DE
+User4 has a Department set to Marketing and a Country set to DE
+Which users are members of Group1?
+Select only one answer.
+a) User1 and User2 only
+b) User1 and User3 only
+c) User2 and User3 only
+d) User1, User 2and User3 only
+e) User1, User2, User3 and User4
+
+29. You have an Azure web service named Contoso2022 that runs in the Standard App Service plan.
+Contoso2022 has five deployment slots in use. A user named User1 has the Contributor role for Contoso2022. You need to ensure that User1 can create additional deployment slots to Contoso2022.
+What should you do?
+Select only one answer.
+a) Assign User1 the Owner role for Contoso2022.
+b) Assign User1 the Website Contributor role for Contoso2022.
+c) Scale up the Contoso2022 App Service plan
+d) Scale out the Contoso2022 App Service plan.
+
+30. You have a Docker image named Image1 that contains a corporate app. You need to deploy Image1 to Azure and make the app accessible to users. Which two Azure services should you deploy? 
+Each correct answer presents part of the solution. Select all answers that apply.
+a) Azure App Service
+b) a virtual machine
+c) Azure Container Registry
+d) a virtual machine scale set
+
+31. You have an Azure container registry named Registry1. You enable the admin user for
+Registry1. Which username should you use to connect to Registry1 as an admin user?
+Select only one answer.
+a) Root
+d) Admin
+c) Administrator
+d) Registry1
+e) Registry1.azurecr.io
+
+32. You plan to create an Azure container instance named container1 that will use a Docker image named Image1. You need to ensure that container1 has persistent storage. Which Azure resources should you deploy for the persistent storage?
+Select only one answer
+a) an Azure container registry only
+b) an Azure Storage account and a file share
+c) an Azure Storage account and a blob container
+d) an Azure SQL database only
+
+33. You have an Azure Storage account named storage1. You create the following encryption scopes for storage1:
+Scope1 that has an encryption type of Microsoft-managed keys
+Scope2 that has an encryption type of Customer-managed keys
+Which storage services can be used with Scope2?
+Select only one answer.
+a) blob only
+b) file only
+d) table and queue only
+e) blob, file, table, and queue
+
+34. You have an Azure Storage account named storage! that contains a file share named share1. You also have an on-premises Active Directory domain that contains a user named User1. You need to ensure that User1 can access share1 by using the SMB protocol. 
+What should you do?
+Select only one answer.
+a) Provide User1 with the shared access signature (SAS) for storage1
+b) Configure the Access control (IAM) settings of storage1
+c) Configure the Firewall and Virtual network settings of storage1
+d) Provide User1 with the access key for storage1.
+
+35. You have an Azure Storage account named storage1. You need to provide time-limited access to storage1. What should you use?
+Select only one answer
+a) an access key
+b) a role assignment
+c) an access policy
+d) a shared access signature (SAS)
+
+36. You have an Azure virtual machine named VM1 that automatically registers in an Azure private DNSzone named contoso.com. VM1 hosts a website named Site1. You need to ensure that Site1 can be resolved by using a URL of http://www.contoso.com. The solution must ensure that if the IP address of VM1 changes, www.contoso.com will resolve to the changed IP address. 
+Which DNS record type should you add to contoso.com?
+
+Select only one answer
+a) A
+b) SVR
+c) TXT
+d) AAAA
+E) CNAME
+
+37. You have an Azure virtual machine named VM1 that connects to a virtual network named VNET1. You create a private DNS zone named contoso.com and add an A record named host1 to the zone. You need to ensure that VM1 can resolve host1.contoso.com. What should you do?
+
+Select only one answer.
+a) Modify the Access control (IAM) settings of the zone.
+b) From the zone, add a virtual network link
+c) From the properties of the network interface, modify the options of the DNS servers
+d) From the properties of VNET1, modify the options of the DNS
+
+servers. You have the following Azure virtual machines that run Windows
+Server 2019:
+Server1- connected to VirtualNET1 and has a Wingtiptoys.com DNS suffix configured
+in Windows Server 2019
+Server2- connected to VirtualNET1 and has a Fabrikam.com DNS suffix configured in
+Windows Server 2019
+Server3- connected to VirtualNET2 and has a Wingtiptoys.com DNS suffix configured
+in Windows Server 2019
+Select only one answer.
+a) Server2 only
+b) Server1 and Server2 only
+c) Server2 and Server4 only
+d) Server1, Server2, Server3, and Server4
+
+38. You have an Azure subscription that contains a virtual network named VNET1. VNET1 uses the following address spaces:
+10.10.1.0/24
+10.10.2.0/28
+VNET1 contains the following subnets:
+Subnet1- has an address space of 10.10.1.0/24
+Subnet2- has an address space of 10.10.2.0/28
+To Subnet1, you deploy a virtual machine named VM1 that runs Windows Server 2019. VM1 has Remote Desktop enabled. VM1 does NOT have a public IP address. You need to be able to deploy Azure Bastion, and then protect VM1. 
+What should you do first?
+Select only one answer
+a) Add a new subnet to VNETL
+b) Modify the address space of VNET1.
+c) Adda public IP address to VM1
+d) Add an extension to VM1.
+
+
+You have an Azure subscription that includes a virtual network named VNet1.
+You plan to create a web app named WebApp1 and deploy it to VNet1.
+You need to prepare the environment for the planned web app. The solution must minimize costs.
+Which app service plan size should you use?
+Only select one answer.
+a)	Dev / Test F1
+b)	Dev / Test B1
+c)	Production P1V2
+d)	Production P3V3
+e)	Isolated I1V2 
+
+
+
+Question 1 of 28
+You plan to deploy the following Azure web apps:
+WebApp1, that uses the .NET 6 runtime stack
+WebApp2, that uses the ASP.NET V4.8 runtime stack
+WebApp3, that uses the Java 11 runtime stack
+WebApp4, that uses the PHP 8.0 runtime stack
+You need to create the app service plans for the web apps.
+What is the minimum number of app service plans that should be created?
+Select only one answer.
+a)	1 
+b)	2
+c)	3
+d)	4
+
+You plan to deploy the following Azure web apps:
+WebApp1, that runs on Windows Server 2016
+WebApp2, that runs on Windows Server 2022
+WebApp3, that runs on Ubuntu Server
+WebApp4, that runs on Red Hat Enterprise Linux
+You need to create the app service plans for the web apps.
+What is the minimum number of app service plans that should be created?
+a)	1 
+b)	2
+c)	3
+d)	4
+
+Your Azure AD contains three users named User1, User2, and User3.
+You have an Azure storage account named storage1 that has the following access:
+User1 is assigned the Storage Account Contributor role on storage1
+User2 has a access key for storage1
+User3 has a shared access signature for storage1
+You rotate the keys for storage1.
+Which user or users can access storage1?
+Only select one answer.
+a)	User1 only
+b)	User1 and User2 only
+c)	User2 and User3 only
+d)	User1, User2 and User3
+
+A company named Contoso, Ltd. has an Azure subscription that is linked to an Azure AD tenant named contoso.com. The Azure subscription contains the following virtual networks:
+VNET1- deployed in the East US location
+VNET2- deployed in the East US location
+VNET3- deployed in the West US location
+Contoso purchases a company named A. Datum Corporation. A. Datum has an Azure subscription that contains an Azure AD tenant named adatum.com. Adatum.com contains the following virtual networks:
+VNETA- deployed in the East US location
+VNETB- deployed in the West US location
+Which virtual networks can you peer to VNET1?
+Only select one answer.
+a)	VNET2 only
+b)	VNET2 and VNET3 only
+c)	VNET2 and VNETA only
+d)	VNET2, VNET3, and VNETA only
+e)	VNET2, VNET3, VNETA, and VNETB
+
+You have an Azure subscription that includes the following resources:
+VNet1, a virtual network
+Subnet1, a subnet in VNet1
+WebApp1, a web app application service
+NSG1, a network security group
+You create an application security group named ASG1.
+Which resource can use ASG1?
+Only select one answer.
+a)	VNet1
+b)	Subnet1
+c)	WebApp1
+d)	NSG1
+
+You have an Azure virtual network named VNET1 that has an IP address space of 192.168.0.0/16 and the following subnets:
+Subnet1- has an IP address range of 192.168.1.0/24 and is connected to 15 VMs
+Subnet2- has an IP address range of 192.168.2.0/24 and does NOT have any VMs connected
+You need to ensure that you can deploy Azure Firewall to VNET1.
+What should you do?
+a)	Only select one answer.
+b)	Add a new subnet to VNET1.
+c)	Add a service endpoint to Subnet2.
+d)	Modify the subnet mask of Subnet2.
+e)	Modify the IP address space of VNET1.
+
+You have an Azure subscription that includes a network security group named NSG1.
+You plan to add an inbound security rule named Rule1 to NSG1.
+You need to configure a priority for Rule1. Rule1 must have the highest priority for inbound security rules in NSG1.
+Which priority should you configure for Rule1?
+Only select one answer.
+a)	0
+b)	1
+c)	10
+d)	100
+e)	1000
+
+You have an Azure subscription that includes a virtual machine named VM1.
+You need to protect VM1 by using Azure Backup.
+Which Azure resource should you create first?
+Only select one answer.
+a)	a backup vault
+b)	a storage account
+c)	a recovery services vault
+d)	a backup policy
+
+
+You have an Azure virtual machine named VM1.
+You need to update continuous delivery for VM1.
+What should you create first?
+Only select one answer.
+a)	an Azure storage account
+b)	a Log Analytics workspace
+c)	an Azure automation account
+d)	an Azure DevOps Organization
+e)	You have an Azure subscription.
+
+You plan to run a data warehouse in an Azure virtual machine named VM1.
+You need to ensure that VM1 is optimized for running a data warehouse.
+Which VM type should you use for VM1?
+Only select one answer.
+a)	General purpose (D-Series)
+b)	Compute optimized (F-Series)
+c)	Memory optimized (M-Series)
+d)	Storage optimized (Ls-Series)
+e)	High performance computing (H-Series)
+
+You have an Azure AD tenant.
+You create a user named Admin1.
+You need to ensure that Admin1 can perform following tasks:
+Assign licenses to Azure AD groups
+Reset passwords of Azure AD users
+What Azure AD role should you add to Admin1?
+a)	Only select one answer.
+b)	User administrator
+c)	Billing administrator
+d)	License administrator
+e)	Helpdesk administrator
+
+
+You have an Azure AD tenant that contains the following identities:
+User1, a user in Azure AD
+Group1, a security group that uses dynamic user membership
+Group2, a Microsoft 365 group that uses assigned membership
+Group3, a security group that uses assigned membership
+Which identities can be added as members of Group3?
+Only select one answer.
+a)	User1 only
+b)	User1 and Group1 only
+c)	User1 and Group2 only
+d)	User1, Group1 and Group2
+
+
+You have an Azure AD tenant that contains a user named User1. The tenant also contains several user accounts from the Marketing department and the Human Resources department.
+You need to ensure that User1 can manage the users from the Marketing department only.
+What should you use?
+a)	Only select one answer.
+b)	Management groups
+c)	Administrative units
+d)	Custom Azure AD roles
+e)	Security groups that use dynamic user membership
