@@ -37,15 +37,6 @@ b) general settings for Contoso2023
 c) application settings for Contoso2023-Slot1*
 d) general settings for Contoso2023-Slot1
 
-4. You plan to create an Azure container instance named container1 that will use a Docker image named Image1. 
-You need to ensure that container1 has persistent storage.
-Which Azure resources should you deploy for the persistent storage?
-Select only one answer.
-a) an Azure container registry only
-b) an Azure Storage account and a file share*
-c) an Azure Storage account and a blob container
-d) an Azure SQL database only
-
 5. You have an Azure container registry named Registry1.
 You enable the admin user for Registry1.
 Which username should you use to connect to Registry1 as an admin user?
@@ -80,14 +71,6 @@ c) blobs and file only*
 d) table and queue only
 e) blobs, files, tables, and queue
 
-You have an Azure Storage account named storage’ that contains a file share named share.
-You also have an on-premises Active Directory domain that contains a user named User1.
-You need to ensure that User! can access share1 by using the SMB protocol.
-What should you do?
-a) Provide User1 with the shared access signature (SAS) for storage1.
-b) Configure the Access control (IAM) settings of storage.
-c) Configure the Firewalls and virtual networks settings of storage1
-d) Provide User1 with the access key for storage1. *
 
 10. You have an Azure Storage account named storage1 that is configured to use the Hot access tier.
 Storage has a container named container1 and the lifecycle management rule with the following settings:
@@ -204,7 +187,7 @@ a) VM1 only
 b) VM3 only
 c) VM1 and VM2 only*
 d) VM1 and VM3 only
-e) VM1, VM2 and VM3*
+e) VM1, VM2 and VM3
 
 20. You have an Azure virtual machine named Computer5 and a Recovery Services vault named Vault5. Computer5 contains the following data disks:
 DiskA has a size of 512 GB
@@ -512,11 +495,10 @@ Subnet1- has an IP address range of 192.168.1.0/24 and is connected to 15 VMs
 Subnet2- has an IP address range of 192.168.2.0/24 and does NOT have any VMs connected
 You need to ensure that you can deploy Azure Firewall to VNET1.
 What should you do?
-a)	Only select one answer.
-b)	Add a new subnet to VNET1. *
-c)	Add a service endpoint to Subnet2.
-d)	Modify the subnet mask of Subnet2.
-e)	Modify the IP address space of VNET1.
+a)	Add a new subnet to VNET1. *
+b)	Add a service endpoint to Subnet2.
+c)	Modify the subnet mask of Subnet2.
+d)	Modify the IP address space of VNET1.
 
 You have an Azure subscription that includes a network security group named NSG1.
 You plan to add an inbound security rule named Rule1 to NSG1.
@@ -742,7 +724,7 @@ VM3, a virtual machine that is configure with Azure Disk encryption and runs Win
 You user Azure Backup to back up the three virtual machines.
 Which virtual machine or virtual machines can user file-level restore?
 A.	VM1 only*
-B.	VM1 and VM2 only
+B.	VM1 and VM2 only*
 C.	VM1 and VM3 only
 D.	VM1, VM2 and VM3
 
@@ -906,7 +888,7 @@ You plan to protect all of the connected virtual machines by using Azure Bastion
 What is the minimum number of Azure Bastion hosts that you must deploy?
 Only select one answer.
 A.	1
-B.	2
+B.	2*
 C.	3
 D.	4
 
@@ -941,7 +923,7 @@ Only select one answer.
 A.	File1 only
 B.	File1 and File2 only
 C.	File1 and the state of App1 only
-D.	File1, File2 and the state of App1 only
+D.	File1, File2 and the state of App1 only*
 E.	File1, File2, the state of App1 and the connection of User1
 
 You have an Azure subscription that contains a user named User1, a resource group named RG1, and a virtual machine named VM1.
@@ -949,6 +931,97 @@ You enable a system-assigned managed identity for VM1.
 To which identities can you assign the Reports reader role?
 Only select one answer.
 A.	User1 only
-B.	User1 and RG1 only
+B.	User1 and RG1 only*
 C.	User1 and VM1 only
 D.	User1, RG1, and VM1
+
+
+You have an Azure container registry named Registry1.
+You create a container image named image1 on a Windows Server container host named Host1.
+You need to store image1 in Registry1.
+Which URL should you use to push image1 from Host1?
+Only select one answer.
+A.	Registry1.azurecr.io*
+B.	Registry1.onmicrosoft.com
+C.	azure.microsoft.com/Registry1
+D.	Registry1.file.core.windows.net
+
+You have Azure subscription that includes virtual network with following subnets:
+Subnet1, which has connected virtual machine
+Subnet2, which has connected web app
+Subnet3, which has connected container instance
+You plan to deploy container instance named container1.
+To which subnets can you connect container1?
+Only select one answer.
+A.	Subnet3 only
+B.	Subnet1 and Subnet3 only
+C.	Subnet2 and Subnet3 only
+D.	Subnet1, Subnet2 and Subnet3*
+
+You have an Azure AD user named User1 and an Azure storage account named storage1 that contains a file share named share1.
+You need to assign the Storage File Data SMB Share Reader role on share1 to User1.
+What should you do first?
+Only select one answer.
+A.	Change the tier for share1.
+B.	Modify the Security protocol settings for Azure file shares.
+C.	Configure identity-based authentication for Azure file shares.
+D.	From the Azure portal setting on the storage1, modify the Azure AD authorization settings.
+
+You have an Azure subscription that contains a storage account named storage1.
+You create a blob container named container1 in storage1.
+What is the maximum number of stored access policies that you can create for container1?
+Only select one answer.
+A.	1
+B.	3
+C.	5*
+D.	10
+E.	64
+
+You have an Azure private DNS zone named contoso.com that is linked to a virtual network named VNet1 and has auto-registration enabled.
+
+You deploy a virtual machine that runs Windows Server to VNet1 with the following settings:
+VM name: VM1
+Windows Server name: Server1
+Private IP address: 10.10.1.5
+Public IP address: 168.61.186.27
+Which DNS record is automatically added to contoso.com?
+Only select one answer.
+A.	a resource record for VM1*
+B.	a resource record for Server1
+C.	a PTR resource record for 10.10.1.5
+D.	a PTR resource record for 168.61.186.27
+
+
+You have an Azure subscription.
+You plan to use fault domains.
+From which Azure resource can you configure the fault domains?
+Only select one answer.
+A.	Virtual machine
+B.	Virtual machine scale set
+C.	Availability set*
+D.	Virtual network
+
+You have an Azure subscription that contains the following storage accounts:
+storage1, configured as StorageV2 kind
+storage2, configured as BlobStorage kind
+storage3, configured as FileStorage kind
+Which storage account or storage accounts can you use Lifecycle management?
+Only select one answer.
+A.	storage1 only
+B.	storage1 and storage2 only
+C.	storage1 and storage3 only
+D.	storage2 and storage3 only
+E.	Storage1, storage2 and storage3
+
+
+You have an Azure subscription that contains the following virtual networks:
+VNet1 in the West US region. No private DNS zone linked to VNet1.
+VNet2 in the West US region. A private DNS zone is linked to VNet2 and the link has auto-registration enabled.
+VNet3 in the East US region. No private DNS zone linked to VNet3.
+You create a private DNS zone named Zone1 in the West US region.
+To which virtual network or virtual networks can you link Zone1 and then enable auto-registration on the link?
+Only select one answer.
+VNet1 only
+VNet1 and VNet2 only
+VNet1 and VNet3 only
+VNet1, VNet2 and Vnet3
